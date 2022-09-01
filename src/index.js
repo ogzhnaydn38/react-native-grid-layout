@@ -13,6 +13,7 @@ import { ViewPropTypes } from "deprecated-react-native-prop-types"
  * @param {colEnd} child component end col
  * @param {rowStart} child component start row
  * @param {rowEnd} child component end row
+ * @param {borderColor} child component borderColor default white
  * @returns a rendering of the grids to react-native screen
  */
 
@@ -65,7 +66,7 @@ export default class GridLayout extends Component {
           width: width,
           height: height,
           borderWidth: 4,
-          borderColor: "#1e232a",
+          borderColor: this.props.borderColor ?? "white",
         }}
       >
         {element}
@@ -86,4 +87,5 @@ GridLayout.propTypes = {
   numCols: PropTypes.number.isRequired,
   numRows: PropTypes.number.isRequired,
   bodyStyle: ViewPropTypes.style,
+  borderColor: PropTypes.string,
 }

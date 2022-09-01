@@ -1,6 +1,6 @@
 {
   "name": "@ogzhnaydn/react-native-grid-layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a component for IOS and Android css grid layout. Can be installed in both Expo managed, bare and react-native cli",
   "main": "index.js",
   "scripts": {
