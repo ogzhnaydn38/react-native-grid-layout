@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { View, ViewPropTypes } from "react-native"
+import { View } from "react-native"
 import PropTypes from "prop-types"
+import { ViewPropTypes } from "deprecated-react-native-prop-types"
 
 /**
  * Render the Css Grid Layout
